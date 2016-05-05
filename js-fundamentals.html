@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS Fundamentals</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<style>
+		/*Custom CSS here*/
+	</style>
+</head>
+<body>
+
+	<button id="theButton">Press My Button</button>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script>
+
+    	// **This variable is in the GLOBAL scope
+    	// var myVariable = 'Good Gravey, Batman!';
+
+    	// **Hoisting the function to be invoked
+
+    	// shoutIt();
+
+    	// **This is a function declaration
+    	// function shoutIt () {
+    	// 	alert(myVariable);
+    	// 	var localVariable = 'This is a local variable message'; // This variable is in the LOCAL scope
+    	// 	window.localVariable = localVariable;
+    	// };
+
+    	// **Invoking the function declaration
+    	// shoutIt();
+
+    	// **A Function expression
+    	// var newShoutIt = function (){
+    	// 	alert(localVariable);
+    	// }(); // **The parenthises here make this a self invoking function
+
+    	// newShoutIt();
+
+		var initDom = function (){
+			var trigger = document.getElementById('theButton');
+			trigger.addEventListener('click', dateFunction);
+		}();
+
+		function dateFunction (){
+			var d = new Date();
+			var n = d.getFullYear();
+
+			setTimeout(function(){ doThis() }, 3000);
+
+			function doThis () {
+				alert(n);
+			}
+		};
+
+		
+
+
+
+
+    </script>
+</body>
+</html>
