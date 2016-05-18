@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap Boilerplate</title>
+	<style>
+		/*Custom CSS here*/
+	</style>
+</head>
+<body>
+	<p id="theP">This is a small sentence</p>
+	
+    <script>
+
+    	// *********** Objects and passing a value to an Object
+
+    	// This is an Object it has global scope
+
+    	// var threeNumbers = {
+    	// 	numberOne: 1,
+    	// 	numberTwo: 35,
+    	// 	numberThree: 25
+    	// };
+
+    	// // This is a function declaration that is adding a property to our object
+    	// function addProperty(){
+    	// 	var aNumber = 55; // this is a local variable
+    	// 	threeNumbers.addNum = aNumber; // because threeNumbers is a global object we can use it in this functino
+    	// };
+
+    	// addProperty(); // invoking the function
+
+    	// // This is just a console log which shows our javascript
+    	// console.log(threeNumbers.numberThree);
+
+    	// // *********** Arrays
+
+    	// var anArray = [18, 12, 15, 17, 5];
+
+    	// //alert(anArray[3]); // this is how you call a specific array 
+
+    	// // arrays are indexed with a 0 starting index 
+
+    	// // ************ Operators
+
+    	// var someMath = 0.5 * (3 + 4);
+    	// console.log(someMath);
+    	// console.log(55-12);
+
+    	// // ************ Arguments
+
+    	// var nine = 9;
+    	// var ten = 10;
+
+    	// function mathIt(numberA, numberB) {
+    	// 	// This where all the code goes and this is the instructions for processing
+    	// 	var neg = numberA - numberB;
+    	// 	var add = numberB + numberA;
+    	// 	return add; // return is really useful, it basically fires off the code
+    	// };
+
+    	// console.log(mathIt(nine, ten));
+
+    	// // ************ Decision makers
+
+    	// var theNumber = 34; 
+    	
+    	// function checkingIt(checker){
+	    // 	if (checker === 34) { 
+	    // 		alert('The number is 34!');
+	    // 	} else {
+	    // 		alert('This is false');
+	    // 	}	
+    	// }
+
+    	// checkingIt(151);
+
+    	// var thisNumber = 17;
+
+    	// if (thisNumber < 9 && thisNumber > 2) {
+    	// 	// below we grab the paragraph via the id theP
+    	// 	document.getElementById('theP').innerHTML = ('The number is between 2 and 9');
+    	// 	// another way this could be done
+    	// 	// (some variable).textContent = 'The number is greater than 9' no longer need the .innerHTML = ('The number...')
+
+    	// } else {
+    	// 	var notTrue = document.getElementById('theP');
+    	// 	notTrue.textContent = 'The number is not between 2 and 9';
+    	// 	// Here we use the textContent property to add text to the DOM node which is the p element which we grab with the id, which is theP
+    	// }
+
+    	// ****** Basic if else syntax
+    	// if(condition){ code if condition is met }
+    	// else { code if condition is not met }
+
+    	// ***** Basic operators
+    	// && and
+    	// || or
+    	// < less than
+    	// > greater than
+    	// There are more....
+
+    	// ************* Loops {Example possibly from Duckett}
+
+    	// // array of scores
+    	// var scores = [23, 34, 56];
+
+    	// // array length using the .length property in this case 3
+    	// var arrayLength = scores.length;
+
+    	// // The current round of the loop, starts at 0
+    	// var roundNumber = 0;
+
+    	// // Declared an empty variable, in this case an empty string
+    	// var msg = '';
+
+    	// // The loop conditions for variable i (iteration) loops through the array each time add data/text to the msg variable
+    	// for (var i = 0; i < arrayLength; i++) {
+
+    	// 	//Add 1 to the current round
+    	// 	roundNumber = (i + 1);
+
+    	// 	//Write the current round to message
+    	// 	msg += 'Round ' + roundNumber + ': ';
+
+
+    	// 	//Get the score from the scores array
+    	// 	//The i variable is referenced and it's value is the index number of the array
+    	// 	msg += scores[i] + '<br />';
+    	// }
+
+    	// document.getElementById('theP').innerHTML = msg;
+
+    </script>
+</body>
+</html>
